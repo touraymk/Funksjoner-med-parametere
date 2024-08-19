@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <button onclick="displayNewText('small', 'plum', 'God dag!')">
+      Klikk for liten tekst
+    </button>
+    <button onclick="displayNewText('x-large', 'green', 'Bonjour!')">
+      Klikk for stor tekst
+    </button>
+  </body>
+  <script>
+    /*Lag en funksjon som kan endre både tekst, farge og størrelse til en div. 
+    Legg til 2 knapper som trigger funksjonen med forskjellige verdier*/
+
+    function displayNewText(size, color, text) {
+      document.getElementById("app").style.fontSize = size;
+      document.getElementById("app").style.color = color;
+      document.getElementById("app").innerHTML = text;
+    }
+  </script>
+</html>
